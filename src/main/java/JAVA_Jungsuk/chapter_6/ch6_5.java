@@ -10,41 +10,42 @@ public class ch6_5 {
 
     }
 
-    @Data
-    static
-    class Student {
-        public String name;
-        public int ban;
-        public int no;
-        public int kor;
-        public int eng;
-        public int math;
+
+}
+@Data
+
+class Student {
+    public String name;
+    public int ban;
+    public int no;
+    public int kor;
+    public int eng;
+    public int math;
 
 
-        public double getTotal() {
-            return kor + eng + math;
-        }
+    public double getTotal() {
+        return kor + eng + math;
+    }
 
-        public double getAverage() {
-            return (int) (this.getTotal() / 3 * 10 + 0.5) / 10.0;
-        }
+    public double getAverage() {
+        return (int) (this.getTotal() / 3 * 10 + 0.5) / 10.0;
+    }
 
-        public Student(String name, int ban, int no, int kor, int eng, int math) {
-            this.name = name;
-            this.ban = ban;
-            this.no = no;
-            this.kor = kor;
-            this.eng = eng;
-            this.math = math;
-        }
+    public Student(String name, int ban, int no, int kor, int eng, int math) {
+        this.name = name;
+        this.ban = ban;
+        this.no = no;
+        this.kor = kor;
+        this.eng = eng;
+        this.math = math;
+    }
 
-        public String info() {
-            return name + "," + ban + "," + no + "," + kor + "," + eng + "," + math + "," + getTotal() + "," + getAverage();
-        }
+    public String info() {
+        return name + "," + ban + "," + no + "," + kor + "," + eng + "," + math + "," + getTotal() + "," + getAverage();
+    }
 
-        public Student() {
+    public Student() {
 
-        }
     }
 }
 

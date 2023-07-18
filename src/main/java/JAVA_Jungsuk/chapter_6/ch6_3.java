@@ -2,7 +2,7 @@ package JAVA_Jungsuk.chapter_6;
 
 public class ch6_3 {
     public static void main(String[] args) {
-        ch6_5.Student s = new ch6_5.Student();
+        Student s = new Student();
         s.name = "홍길동";
         s.ban = 1;
         s.no = 1;
